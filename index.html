@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="root">
+        <img class="loading" src="./img/Rolling-1s-200px.svg" alt="loading" />
+      </div>
+      <div class="popup hidden">
+        <form class="form">
+          <div class="form__group">
+            <input
+              type="text"
+              value=""
+              class="form__input"
+              placeholder="City"
+              required
+            />
+            <button class="form__button" type="submit">OK</button>
+          </div>
+        </form>
+
+        <button class="popup__close">X</button>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
